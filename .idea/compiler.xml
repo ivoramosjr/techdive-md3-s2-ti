@@ -8,6 +8,16 @@
         <outputRelativeToContentRoot value="true" />
         <module name="techdive-m3-s2-ti" />
       </profile>
+      <profile name="Annotation profile for m03s01-exerc" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct-processor/1.4.2.Final/mapstruct-processor-1.4.2.Final.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct/1.4.2.Final/mapstruct-1.4.2.Final.jar" />
+        </processorPath>
+        <module name="m03s01-exerc" />
+      </profile>
     </annotationProcessing>
   </component>
 </project>
