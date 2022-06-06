@@ -58,4 +58,15 @@ public class AlunosTeste {
                 .as(AlunoDTO.class);
     }
 
+    @Test
+    @Order(3)
+    public void remover(){
+        given().contentType(ContentType.JSON)
+                .pathParam("matricula", matricula)
+                .when()
+                .delete("/{matricula}")
+                .then()
+                .statusCode(204);
+    }
+
 }
